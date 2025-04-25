@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ashish - portfolio</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 6, 39);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(197, 218, 240);
+        }
+
+        nav ul li a:hover {
+            color: rgb(132, 195, 244);
+            font-size: 1.02rem;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: 625;
+            color: rgb(197, 218, 240);
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.1rem;
+        }
+
+        .rightsection img {
+            width: 110%;
+        }
+
+        .color {
+            color: rgb(67, 121, 214);
+        }
+
+        #element {
+            color: rgb(67, 121, 214);
+        }
+
+        footer {
+            background-color: rgb(4, 6, 39);
+            padding: 25px 0;
+            color: rgb(197, 218, 240);
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.90rem;;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
+            
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+        body {
+            background-color: #1e1e2f;
+            color: #ffffff;
+            ;
+            font-family: poppins, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ashish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li><a href="/">Contact Me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hey there! I'm <b><span class="color">Ashish</span>,</b>
+                <div>a creative and passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="img.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<b>Web Developer.</b>'],
+            typeSpeed: 70,
+        });
+    </script>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Ashish. All rights reserved.</p>
+            <p>Connect with me:</p>
+            <div class="social-icons">
+                <a href="#" target="_blank">
+                    <img src="new2.png" alt="LinkedIn" />
+                </a>
+                <a href="#" target="_blank">
+                    <img src="new3.png" alt="GitHub" />
+                </a>
+                <a href="#" target="_blank">
+                    <img src="new5.png" alt="Instagram" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
